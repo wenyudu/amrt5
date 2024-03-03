@@ -66,6 +66,56 @@ AMR can help PLM to augment their semantics to strive a better trade off between
 
 The parser we choose is orginal from [here](https://github.com/goodbai-nlp/AMRBART). We modified this to be suitable for Natural Language Questions (NLQs) by retraining it using [a corpus of NLQ-AMR pairs](https://github.com/IBM/AMR-annotations).
 
+
+## Dataset Citations
+
+```
+@inproceedings{Yu&al.18c,
+  title     = {Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task},
+  author    = {Tao Yu and Rui Zhang and Kai Yang and Michihiro Yasunaga and Dongxu Wang and Zifan Li and James Ma and Irene Li and Qingning Yao and Shanelle Roman and Zilin Zhang and Dragomir Radev}
+  booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  address   = "Brussels, Belgium",
+  publisher = "Association for Computational Linguistics",
+  year      = 2018
+}
+
+@inproceedings{gan-etal-2021-towards,
+    title = "Towards Robustness of Text-to-{SQL} Models against Synonym Substitution",
+    author = "Gan, Yujian  and
+      Chen, Xinyun  and
+      Huang, Qiuping  and
+      Purver, Matthew  and
+      Woodward, John R.  and
+      Xie, Jinxia  and
+      Huang, Pengsheng",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.195",
+    doi = "10.18653/v1/2021.acl-long.195",
+    pages = "2505--2515",
+}
+
+@misc{gan2021exploring,
+      title={Exploring Underexplored Limitations of Cross-Domain Text-to-SQL Generalization}, 
+      author={Yujian Gan and Xinyun Chen and Matthew Purver},
+      year={2021},
+      eprint={2109.05157},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@article{deng2020structure,
+  title={Structure-Grounded Pretraining for Text-to-SQL},
+  author={Deng, Xiang and Awadallah, Ahmed Hassan and Meek, Christopher and Polozov, Oleksandr and Sun, Huan and Richardson, Matthew},
+  journal={arXiv preprint arXiv:2010.12773},
+  year={2020}
+}
+```
+
+
+
 ## License
 
 MIT
