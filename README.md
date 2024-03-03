@@ -35,7 +35,7 @@ Train AMRT5-large (SC) model
 python run_seq2seq_internal.py --config_files=configs/train_amr_sc.json
 ```
 
-Train AMRT5-3B model
+Train AMRT5-3B (SC) model
 ```bash
 python run_seq2seq_internal.py --config_files=configs/train_amr_3B.json
 ```
