@@ -1,7 +1,7 @@
 {
     "run_name": "t5-spider",
     "model_name_or_path": "/sharefs/baai-mrnd/wyt5/t5-large",
-    "dataset": "spider_amr",
+    "dataset": "spider_amr_sc",
     "source_prefix": "",
     "schema_serialization_type": "peteshaw",
     "schema_serialization_randomized": false,
