@@ -31,11 +31,11 @@ SYN, DK and REALISTIC are from [here](https://github.com/ygan/Spider-Syn), [here
 
 ## AMR
 
-AMR2.pdf
+<img src="amr.png"> 
 
 AMR is a comprehensive semantic graph representation of a sentence. It utilizes a directed acyclic graph structure with a root node and represents important concepts as nodes and semantic relationships as edges.
 
-casestudy.pdf
+<img src="casestudy.png"> 
 
 AMR can help PLM to augment their semantics to strive a better trade off between efficiency and effectiveness.
 
