@@ -3,7 +3,9 @@
 This repository contains the official implementation of experiments conducted in
 - On Enhancing NL2SQL Semantics \[Scalable Data Science\] (VLDB 2024 Submission)
 
-🌲 Repo structure:
+<img src="casestudy.png">
+
+### Repo structure:
 - `configs`: Json files for various running configurtions
 - `seq2seq`: Codebase for **NL2SQL** experiments, which is adapted from [Picard](https://github.com/ServiceNow/picard) for the file structure.
   - `datasets`: Dataset related python files
@@ -14,40 +16,49 @@ This repository contains the official implementation of experiments conducted in
 
 ### Dependencies
  - python3.7 or above
- - pytorch 1.10 or above
- - transformers
- - datasets
+   
+Install python packages
+
+```bash
+pip install -r requirements.txt
+```
 
 ### Basic Usage
 
+Train AMRT5-large (LN) model
 ```bash
-python run_seq2seq_internal.py
+python run_seq2seq_internal.py --config_files=configs/train_amr.json
+```
+
+Train AMRT5-large (SC) model
+```bash
+python run_seq2seq_internal.py --config_files=configs/train_amr_sc.json
+```
+
+Train AMRT5-3B model
+```bash
+python run_seq2seq_internal.py --config_files=configs/train_amr_3B.json
+```
+
+Eval the model A 
+```bash
+python run_seq2seq_internal_eval.py --model_path=path/to/ckpt_A
 ```
 
 ### NL2SQL datasets
-The Spider dataset is publically available from [here](https://drive.usercontent.google.com/download?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download&authuser=0).
 
-SYN, DK and REALISTIC are from [here](https://github.com/ygan/Spider-Syn), [here](https://github.com/ygan/Spider-DK) and [here](https://zenodo.org/records/5205322).
-
-## Main Result
-We report the main result on Spider datasets.
-
-| Approach         | Exact Match Acc | Execution Acc |
-|------------------|-----------------|---------------|
-| T5-large         | 67.0            | 69.3          |
-| AMRT5-large (LN) | 71.5            | 73.9          |
-| AMRT5-large (SC) | **72.0**            | **74.7**          |
-|------------------|-----------------|---------------|
-| T5-3B | 71.9            | 75.0          |
-| AMRT5-3B (SC) | **75.0**            | **77.9**          |
+| Dataset         | Link |
+|------------------|-----------------|
+| Spider        |  https://drive.usercontent.google.com/download?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download&authuser=0           | 
+| SYN | https://github.com/ygan/Spider-Syn            |
+| DK        | https://github.com/ygan/Spider-DK            |
+| REALISTIC | https://zenodo.org/records/5205322            |
 
 ## AMR
 
 <img src="AMR.png"> 
 
 AMR is a comprehensive semantic graph representation of a sentence. It utilizes a directed acyclic graph structure with a root node and represents important concepts as nodes and semantic relationships as edges.
-
-<img src="casestudy.png"> 
 
 AMR can help PLM to augment their semantics to strive a better trade off between efficiency and effectiveness.
 
