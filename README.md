@@ -29,6 +29,18 @@ The Spider dataset is publically available from [here](https://drive.usercontent
 
 SYN, DK and REALISTIC are from [here](https://github.com/ygan/Spider-Syn), [here](https://github.com/ygan/Spider-DK) and [here](https://zenodo.org/records/5205322).
 
+## Main Result
+We report the main result on Spider datasets.
+
+| Approach         | Exact Match Acc | Execution Acc |
+|------------------|-----------------|---------------|
+| T5-large         | 67.0            | 69.3          |
+| AMRT5-large (LN) | 71.5            | 73.9          |
+| AMRT5-large (SC) | **72.0**            | **74.7**          |
+|------------------|-----------------|---------------|
+| T5-3B | 71.9            | 75.0          |
+| AMRT5-3B (SC) | **75.0**            | **77.9**          |
+
 ## AMR
 
 <img src="AMR.png"> 
@@ -42,11 +54,6 @@ AMR can help PLM to augment their semantics to strive a better trade off between
 ### AMR parser
 
 The parser we choose is orginal from [here](https://github.com/goodbai-nlp/AMRBART). We modified this to be suitable for Natural Language Questions (NLQs) by retraining it using [a corpus of NLQ-AMR pairs](https://github.com/IBM/AMR-annotations).
-
-## Main Result
-We report the main result on Spider datasets.
-
-
 
 ## License
 
