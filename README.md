@@ -47,12 +47,14 @@ python run_seq2seq_internal_eval.py --model_path=path/to/ckpt_A
 
 ### NL2SQL datasets
 
-| Dataset         | Zipped Files |Link|
-|------------------|-----------------|-----------------|
-| Spider        |data/spider.zip|  https://drive.usercontent.google.com/download?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download&authuser=0           | 
-| SYN || https://github.com/ygan/Spider-Syn            |
-| DK        || https://github.com/ygan/Spider-DK            |
-| REALISTIC | |https://zenodo.org/records/5205322            |
+| Dataset        |Link|
+|------------------|-----------------|
+| Spider        |  https://drive.usercontent.google.com/download?id=1iRDVHLr4mX2wQKSgA9J8Pire73Jahh0m&export=download&authuser=0           | 
+| SYN | https://github.com/ygan/Spider-Syn            |
+| DK        | https://github.com/ygan/Spider-DK            |
+| REALISTIC |https://zenodo.org/records/5205322            |
+
+We also provide preprocessed datasets in the folder `data`.
 
 ## AMR
 
