@@ -31,7 +31,7 @@ SYN, DK and REALISTIC are from [here](https://github.com/ygan/Spider-Syn), [here
 
 ## AMR
 
-<img src="amr.png"> 
+<img src="AMR.png"> 
 
 AMR is a comprehensive semantic graph representation of a sentence. It utilizes a directed acyclic graph structure with a root node and represents important concepts as nodes and semantic relationships as edges.
 
@@ -40,3 +40,14 @@ AMR is a comprehensive semantic graph representation of a sentence. It utilizes 
 AMR can help PLM to augment their semantics to strive a better trade off between efficiency and effectiveness.
 
 ### AMR parser
+
+The parser we choose is orginal from [here](https://github.com/goodbai-nlp/AMRBART). We modified this to be suitable for Natural Language Questions (NLQs) by retraining it using [a corpus of NLQ-AMR pairs](https://github.com/IBM/AMR-annotations).
+
+## Main Result
+We report the main result on Spider datasets.
+
+
+
+## License
+
+MIT
