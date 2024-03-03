@@ -67,7 +67,7 @@ AMR can help PLM to augment their semantics to strive a better trade off between
 The parser we choose is orginal from [here](https://github.com/goodbai-nlp/AMRBART). We modified this to be suitable for Natural Language Questions (NLQs) by retraining it using [a corpus of NLQ-AMR pairs](https://github.com/IBM/AMR-annotations).
 
 
-## Dataset Citations
+## Datasets Citations
 
 ```
 @inproceedings{Yu&al.18c,
